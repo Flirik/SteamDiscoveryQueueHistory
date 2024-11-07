@@ -1,7 +1,11 @@
 let elemTh = document.createElement('th');
 let i = 0;
 
-document.querySelector("#AccountDataTable_2 > thead > tr").appendChild(elemTh);
+document.querySelector("#page_content > div:nth-child(3)").innerHTML = '';
+document.getElementById("AccountDataTable_1").innerHTML = '';
+document.querySelector("#page_content > div:nth-child(5)").innerHTML = '';
+
+document.querySelector("#AccountDataTable_2 > thead > tr").appendChild(elemTh); 
 
 let blocks = document.querySelectorAll("#AccountDataTable_2 > tbody > tr");
 blocks.forEach(
