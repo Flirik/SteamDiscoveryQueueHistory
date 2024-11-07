@@ -1,0 +1,17 @@
+{
+    "author": "Flirik",
+    "manifest_version": 3,
+    "name": "Steam add picture",
+    "version": "1.0",
+    "description": "Добавление фото в списке",
+	"icons": {
+	    "128": "128.png"
+    },
+    "content_scripts": [
+	    {
+ 		   "matches": [ "https://help.steampowered.com/ru/accountdata/DiscoveryQueueHistory*" ],
+	 	   "js": [ "app.js" ]
+	    }
+    ]
+	
+}
